@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: ReactElement }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="main_container">{children}</main>
       <Footer />
     </>
   );

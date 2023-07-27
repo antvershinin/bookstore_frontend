@@ -3,7 +3,7 @@ import styled from "styled-components";
 import InputBase from "@mui/material/InputBase";
 import Button from "@mui/material/Button";
 
-export const HeaderStyled = styled.div`
+export const HeaderStyled = styled.header`
   width: 100%;
 
   .header_content {
