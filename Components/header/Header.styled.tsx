@@ -14,25 +14,24 @@ export const HeaderStyled = styled.header`
     align-items: center;
     margin-top: 24px;
   }
-`;
 
-export const LogoWrapper = styled.div`
-  height: 46px;
-  min-height: 46px;
-  min-width: 88px;
-  margin-right: 128px;
   .header_logo {
+    height: 46px;
+    min-height: 46px;
+    min-width: 88px;
+    margin-right: 128px;
+  }
+  .header_logo-image {
     width: 100%;
     height: 100%;
   }
-`;
-
-export const TextWrapper = styled.div`
-  height: 24px;
-  width: 66px;
-  margin-right: 43px;
-  font-weight: 500;
-  font-style: 16px;
+  .header_text {
+    height: 24px;
+    width: 66px;
+    margin-right: 43px;
+    font-weight: 500;
+    font-style: 16px;
+  }
 `;
 
 export const Search = styled.div`

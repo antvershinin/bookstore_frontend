@@ -2,38 +2,36 @@ import {
   ButtonWrapper,
   HeaderStyled,
   LogInButton,
-  LogoWrapper,
   Search,
   SearchIconWrapper,
   SearchInputBase,
-  TextWrapper,
 } from "./Header.styled";
 import Image from "next/image";
 import logo from "../images/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <HeaderStyled>
       <div className="header_content">
-        <LogoWrapper>
+        <div className="header_logo-image">
           <Image src={logo} alt="logo" className="header_logo" />
-        </LogoWrapper>
-
-        <TextWrapper>
+        </div>
+        <div className="header_text">
           <span>Catalog</span>
-        </TextWrapper>
-
+        </div>
         <Search>
           <SearchIconWrapper>
             <SearchIcon className="search_icon" />
           </SearchIconWrapper>
           <SearchInputBase placeholder="Search" />
         </Search>
-
-        <ButtonWrapper>
-          <LogInButton variant="contained">Log In/ Sing Up</LogInButton>
-        </ButtonWrapper>
+        <Link href={"/login"}>
+          <ButtonWrapper>
+            <LogInButton variant="contained">Log In/ Sing Up</LogInButton>
+          </ButtonWrapper>
+        </Link>
       </div>
     </HeaderStyled>
   );

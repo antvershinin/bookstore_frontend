@@ -14,7 +14,7 @@ export const BannerStyled = styled.div`
   .banner_books {
     position: absolute;
     display: flex;
-    opacity: 20;
+    opacity: 80%;
     align-self: flex-end;
   }
 `;
