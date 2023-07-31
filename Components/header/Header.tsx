@@ -1,15 +1,9 @@
-import {
-  ButtonWrapper,
-  HeaderStyled,
-  LogInButton,
-  Search,
-  SearchIconWrapper,
-  SearchInputBase,
-} from "./Header.styled";
+import { HeaderStyled, LogInButton } from "./Header.styled";
 import Image from "next/image";
 import logo from "../images/logo.png";
-import SearchIcon from "@mui/icons-material/Search";
+import search_logo from "./images/search_logo.png";
 import Link from "next/link";
+import { Input } from "../input/Input";
 
 const Header = () => {
   return (
@@ -21,16 +15,11 @@ const Header = () => {
         <div className="header_text">
           <span>Catalog</span>
         </div>
-        <Search>
-          <SearchIconWrapper>
-            <SearchIcon className="search_icon" />
-          </SearchIconWrapper>
-          <SearchInputBase placeholder="Search" />
-        </Search>
+        <Input icon={search_logo} width={"630px"} height={"64px"} />
         <Link href={"/login"}>
-          <ButtonWrapper>
+          <div className="button_wrapper">
             <LogInButton variant="contained">Log In/ Sing Up</LogInButton>
-          </ButtonWrapper>
+          </div>
         </Link>
       </div>
     </HeaderStyled>
